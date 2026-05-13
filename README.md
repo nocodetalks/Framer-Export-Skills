@@ -49,6 +49,7 @@ Done. Your site is live, no longer paying Framer.
 ## What you need
 
 - A Mac or Linux computer (Windows via WSL also works)
+- [Node.js 22.12+](https://nodejs.org/) installed
 - [Claude Code](https://claude.com/claude-code) installed (free for individual use)
 - A site exported via [FramerExport](https://letaiworkforme.com/)
 

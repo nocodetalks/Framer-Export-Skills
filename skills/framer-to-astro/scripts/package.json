@@ -5,7 +5,7 @@
   "description": "Helper scripts bundled with the framer-to-astro skill. Install once with `npm install` from this directory.",
   "type": "module",
   "engines": {
-    "node": ">=20"
+    "node": ">=22.12"
   },
   "dependencies": {
     "cheerio": "^1.0.0",
