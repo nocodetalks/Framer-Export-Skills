@@ -1,0 +1,33 @@
+import { defineConfig } from 'astro/config';
+
+// Static-site config tuned for framer-cloner output. Pages are pre-rendered
+// HTML; the Framer JS bundle in /public/js/ hydrates on the client.
+export default defineConfig({
+  // Set this to your production URL once you know it (e.g. 'https://mysite.com').
+  // Required for sitemap generation, canonical URLs, and Astro.url to be correct
+  // in production. Until set, leave commented out.
+  // site: 'https://example.com',
+
+  output: 'static',
+
+  // 'directory' format → /blog/index.html (matches Vercel/Netlify/CF Pages defaults).
+  // Framer canonical URLs typically use trailing-slash 'always' but most static
+  // hosts strip them. Stick with 'directory' unless your CDN specifically needs
+  // trailing slashes preserved.
+  build: {
+    format: 'directory',
+    assets: '_astro',
+    inlineStylesheets: 'never',
+  },
+
+  // Disable Astro's automatic compression of inline <style> / <script> —
+  // we need byte-identical preservation for parity.
+  compressHTML: false,
+
+  vite: {
+    build: {
+      // Don't inline anything from /public/
+      assetsInlineLimit: 0,
+    },
+  },
+});

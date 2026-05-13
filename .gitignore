@@ -1,0 +1,19 @@
+# Node deps for the skill's helper scripts — re-installable via `npm install`.
+# Path-agnostic so it survives any future rename.
+**/node_modules/
+
+# Astro project intermediates (only relevant if you commit a converted site
+# alongside the skill; safe to ignore at the skill-repo level)
+**/dist/
+**/.astro/
+**/.framer-extract/
+
+# OS / editor
+.DS_Store
+*.log
+.vscode/
+.idea/
+
+# Claude Code per-session state (keep settings.local.json out of git if
+# it contains machine-specific paths or auth)
+.claude/settings.local.json

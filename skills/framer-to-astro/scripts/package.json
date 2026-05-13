@@ -1,0 +1,14 @@
+{
+  "name": "framer-to-astro-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Helper scripts bundled with the framer-to-astro skill. Install once with `npm install` from this directory.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "fast-glob": "^3.3.2"
+  }
+}
