@@ -4,6 +4,8 @@ Move your Framer site to **Astro** in one command — keeping your design exactl
 
 Built for [FramerExport](https://letaiworkforme.com/) users who want to leave Framer hosting and own their code, without losing a single pixel of their design.
 
+> **What is FramerExport?** A one-click tool that downloads your live Framer site as a folder on your computer — ready for this skill to convert into Astro.
+
 ## Why use this
 
 - **Own your code.** Get a clean Astro project you can edit in any code editor.
