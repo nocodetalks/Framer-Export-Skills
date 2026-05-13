@@ -22,10 +22,10 @@ That's it. The skill is now available in [Claude Code](https://claude.com/claude
 ## Use it
 
 1. Export your Framer site using [FramerExport](https://letaiworkforme.com/) — you'll get a folder on your computer.
-2. Open Claude Code and tell it to convert the folder:
+2. Open Claude Code and run:
 
    ```
-   convert ~/Downloads/my-framer-site to astro
+   /framer-to-astro move ~/Downloads/my-framer-site to astro
    ```
 
 3. Claude creates a new folder next to it called `my-framer-site-astro/` — that's your Astro project, ready to deploy.
